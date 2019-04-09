@@ -35,7 +35,7 @@ How to setup TV-related environment for Windows
 1. Open Windows PowerShell with administrator privilege from start button (right click)
 2. `npm install winser@1.0.3 -g`
 3. `npm install mirakurun@latest -g --production`
-4. Download [channels.yml](https://github.com/subdiox/TV/master/channels.yml) and replace `C:\Users\username\.Mirakurun\channels.yml`
+4. Download [channels.yml](https://github.com/subdiox/TV/blob/master/channels.yml) and replace `C:\Users\username\.Mirakurun\channels.yml`
 5. Edit `C:\Users\username\.Mirakurun\tuners.yml` like this:
     ```
     - name: PT3-S1
