@@ -91,7 +91,7 @@ How to setup TV-related environment for Windows
 ## CasProcessor (CAS Processing Plugin for TVTest)
 1. Download [CasProcessor](https://github.com/logue/CasProcessor) and extract it
 2. Open `CasProcessor.sln` with Visual Studio and build it with `Release` and `x64` settings
-3. Copy `CasProcessor.tvtp` to `D:\TV\TVTest\Plugins`
+3. Copy `x64\Release\CasProcessor.tvtp` to `D:\TV\TVTest\Plugins`
 
 ## TvCas (Main CAS Processor called by CasProcessor)
 1. Download [TvCas](https://github.com/logue/TvCas) and extract it
