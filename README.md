@@ -100,6 +100,9 @@ How to setup TV-related software for Windows
 2. Open `TvCas.sln` with Visual Studio and build it with `Release` and `x64` settings
 3. Copy `x64\Release\B25.tvcas` to `D:\TV\TVTest`
 
+## LAVFilters (Video Decoder for TVTest)
+1. Download [LAVFilters binary](https://github.com/Nevcairiel/LAVFilters/releases/latest) and install it
+
 ## EPGStation (TV Recording/Streaming Server)
 1. Open Windows PowerShell with administrator privilege from start button (right click)
 2. `npm install windows-build-tools` (when freezing, Ctrl+C and retry)
