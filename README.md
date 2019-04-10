@@ -124,7 +124,8 @@ Here you can check whether TVTest is working or not.
 8. `copy config\config.sample.json config\config.json`
 9. `copy config\operatorLogConfig.sample.json config\operatorLogConfig.json`
 10. `copy config\serviceLogConfig.sample.json config\serviceLogConfig.json`
-11. Edit `config\config.json` like this:
+11. Download [static FFmpeg binary](https://ffmpeg.zeranoe.com/builds/) and place them to `C:\\ffmpeg` for example
+12. Edit `config\config.json` like this:
     ```json
     "mirakurunPath": "\\\\.\\pipe\\mirakurun",
     "ffmpeg": "C:\\ffmpeg\\ffmpeg.exe",
@@ -143,5 +144,5 @@ Here you can check whether TVTest is working or not.
         }
     ]
     ```
-12. `npm run install-win-service`
-13. `net start epgstation` / `net stop epgstation`
+13. `npm run install-win-service`
+14. `net start epgstation` / `net stop epgstation`
