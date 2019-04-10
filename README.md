@@ -16,7 +16,7 @@ How to setup TV-related software for Windows
 2. Copy `x64\BonRecTest.exe` to `D:\TV\BonRecTest` directory (create directory)
 
 ## BonDriver (Driver for BonRecTest)
-1. Download [BonDriver for PT3 binary](https://github.com/epgdatacapbon/BonDriver_PT-ST/releases/latest) and extract it
+1. Download [BonDriver for PT3 binary](https://github.com/epgdatacapbon/BonDriver_PT3-ST/releases/latest) and extract it
 2. Copy `BonDriver_*` and `x64\PTCtrl.exe` to `D:\TV\BonRecTest` directory
 3. Duplicate `x64\BonDriver_PT-S.dll` to `D:\TV\BonRecTest\BonDriver_PT-S0.dll` and `D:\TV\BonRecTest\BonDriver_PT-S1.dll`
 4. Duplicate `x64\BonDriver_PT-T.dll` to `D:\TV\BonRecTest\BonDriver_PT-T0.dll` and `D:\TV\BonRecTest\BonDriver_PT-T1.dll`
