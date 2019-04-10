@@ -1,5 +1,5 @@
 # TV
-How to setup TV-related environment for Windows
+How to setup TV-related software for Windows
 
 # For Windows (x64)
 ## Hardware Requirements
