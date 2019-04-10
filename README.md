@@ -73,7 +73,7 @@ How to setup TV-related software for Windows
     ```
 6. `Start-Service mirakurun` / `Stop-Service mirakurun`
 
-### [Optional] Mirakurun-UI (UserInterface for Mirakurun)
+### [Optional] Mirakurun-UI (User Interface for Mirakurun)
 1. Download [Mirakurun-UI](https://github.com/Chinachu/Mirakurun-UI/releases/latest) and install it
 2. Launch Mirakurun-UI and enter your private IP address to it (don't use 127.0.0.1, use 192.168.x.x)
 3. Check whether mirakurun is working or not
