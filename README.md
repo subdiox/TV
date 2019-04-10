@@ -5,13 +5,14 @@ How to setup TV-related software for Windows
 ## Hardware Requirements
 - Tuner Board (PT3 Rev.A is highly recommended)
 
-## Software Requirements
+## Requirements
+### Software Requirements
 - Tuner driver and SDK ([PT3 Rev.A driver/SDK](https://earthsoft.jp/PT3/download_SHA-2.html))
 - [Node.js](https://nodejs.org/ja/) (10.x LTS is recommended)
 - [Git for Windows](https://gitforwindows.org/)
 - [Visual Studio Community 2019](https://visualstudio.microsoft.com/ja/)
 
-## BonRecTest (Recorder)
+### BonRecTest (Recorder)
 1. Download [BonRecTest binary](https://github.com/rndomhack/BonRecTest/releases/latest) and extract it
 2. Copy `x64\BonRecTest.exe` to `D:\TV\BonRecTest` directory (create directory)
 
