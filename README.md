@@ -69,7 +69,7 @@ How to setup TV-related software for Windows
       decoder: ~
       isDisabled: false
     ```
-6. `Start-Service mirakurun`
+6. `Start-Service mirakurun` / `Stop-Service mirakurun`
 
 ## BonDriver_Mirakurun (BonDriver for Mirakurun using TVTest)
 1. Download [BonRecTest_Mirakurun binary](https://github.com/Chinachu/BonDriver_Mirakurun/releases/latest) and extract it
@@ -131,5 +131,4 @@ How to setup TV-related software for Windows
     ]
     ```
 12. `npm run install-win-service`
-
-(*) To stop: `net stop epgstation`, To start: `net start epgstation`
+13. `net start epgstation` / `net stop epgstation`
