@@ -8,6 +8,7 @@ How to setup TV-related environment for Windows
 ## Software Requirements
 - Tuner driver and SDK ([PT3 Rev.A driver/SDK](https://earthsoft.jp/PT3/download_SHA-2.html))
 - [Node.js](https://nodejs.org/ja/) (10.x LTS is recommended)
+- [Git for Windows](https://gitforwindows.org/)
 - [Visual Studio Community 2019](https://visualstudio.microsoft.com/ja/)
 
 ## BonRecTest (Recorder)
@@ -37,7 +38,7 @@ How to setup TV-related environment for Windows
 3. `npm install mirakurun@latest -g --production`
 4. Download [channels.yml](https://github.com/subdiox/TV/blob/master/channels.yml) and replace `C:\Users\username\.Mirakurun\channels.yml`
 5. Edit `C:\Users\username\.Mirakurun\tuners.yml` like this:
-    ```
+    ```:tuners.yml
     - name: PT3-S1
     types:
         - BS
@@ -66,7 +67,8 @@ How to setup TV-related environment for Windows
         - GR
     command: D:\TV\BonRecTest\BonRecTest.exe --decoder D:\TV\BonRecTest\B25Decoder.dll --driver D:\TV\BonRecTest\BonDriver_PT3-T1.dll --output - --channel <channel>
     decoder: ~
-    isDisabled: false```
+    isDisabled: false
+    ```
 6. `Start-Service mirakurun`
 
 ## BonDriver_Mirakurun (BonDriver for Mirakurun using TVTest)
@@ -97,3 +99,37 @@ How to setup TV-related environment for Windows
 1. Download [TvCas](https://github.com/logue/TvCas) and extract it
 2. Open `TvCas.sln` with Visual Studio and build it with `Release` and `x64` settings
 3. Copy `x64\Release\B25.tvcas` to `D:\TV\TVTest`
+
+## EPGStation (TV Recording/Streaming Server)
+1. Open Windows PowerShell with administrator privilege from start button (right click)
+2. `npm install windows-build-tools` (when freezing, Ctrl+C and retry)
+3. `cd D:\TV`
+4. `git clone https://github.com/l3tnun/EPGStation.git`
+5. `cd EPGStation`
+6. `npm install`
+7. `npm run build`
+8. `copy config\config.sample.json config\config.json`
+9. `copy config\operatorLogConfig.sample.json config\operatorLogConfig.json`
+10. `copy config\serviceLogConfig.sample.json config\serviceLogConfig.json`
+11. Edit `config\config.json` like this:
+    ```
+    "mirakurunPath": "\\\\.\\pipe\\mirakurun",
+    "ffmpeg": "C:\\ffmpeg\\ffmpeg.exe",
+    "ffprobe": "C:\\ffmpeg\\ffprobe.exe",
+    "encode": [
+        {
+            "name": "H264",
+            "cmd": "C:\\PROGRA~1\\nodejs\\node.exe %ROOT%\\config\\enc.js main",
+            "suffix": ".mp4",
+            "default": true
+        },
+        {
+            "name": "H264-sub",
+            "cmd": "C:\\PROGRA~1\\nodejs\\node.exe %ROOT%\\config\\enc.js sub",
+            "suffix": "-sub.mp4"
+        }
+    ]
+    ```
+12. `npm run install-win-service`
+
+(*) To stop: `net stop epgstation`, To start: `net start epgstation`
