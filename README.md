@@ -38,7 +38,7 @@ How to setup TV-related software for Windows
 3. `npm install mirakurun@latest -g --production`
 4. Download [channels.yml](https://github.com/subdiox/TV/blob/master/channels.yml) and replace `C:\Users\username\.Mirakurun\channels.yml`
 5. Edit `C:\Users\username\.Mirakurun\tuners.yml` like this:
-    ```:tuners.yml
+    ```yaml
     - name: PT3-S1
       types:
           - BS
@@ -112,7 +112,7 @@ How to setup TV-related software for Windows
 9. `copy config\operatorLogConfig.sample.json config\operatorLogConfig.json`
 10. `copy config\serviceLogConfig.sample.json config\serviceLogConfig.json`
 11. Edit `config\config.json` like this:
-    ```
+    ```json
     "mirakurunPath": "\\\\.\\pipe\\mirakurun",
     "ffmpeg": "C:\\ffmpeg\\ffmpeg.exe",
     "ffprobe": "C:\\ffmpeg\\ffprobe.exe",
