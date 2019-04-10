@@ -3,7 +3,7 @@ How to setup TV-related software for Windows
 
 # For Windows (x64)
 ## Hardware Requirements
-- Tuner (PT3 Rev.A is recommended)
+- Tuner Board (PT3 Rev.A is highly recommended)
 
 ## Software Requirements
 - Tuner driver and SDK ([PT3 Rev.A driver/SDK](https://earthsoft.jp/PT3/download_SHA-2.html))
