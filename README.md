@@ -124,7 +124,7 @@ Here you can check whether TVTest is working or not.
 8. `copy config\config.sample.json config\config.json`
 9. `copy config\operatorLogConfig.sample.json config\operatorLogConfig.json`
 10. `copy config\serviceLogConfig.sample.json config\serviceLogConfig.json`
-11. Download [static FFmpeg binary](https://ffmpeg.zeranoe.com/builds/) and place them to `C:\\ffmpeg` for example
+11. Download [static FFmpeg binary](https://ffmpeg.zeranoe.com/builds/) and place them to `C:\ffmpeg` for example
 12. Edit `config\config.json` like this:
     ```json
     "mirakurunPath": "\\\\.\\pipe\\mirakurun",
