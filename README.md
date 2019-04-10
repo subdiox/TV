@@ -40,34 +40,34 @@ How to setup TV-related environment for Windows
 5. Edit `C:\Users\username\.Mirakurun\tuners.yml` like this:
     ```:tuners.yml
     - name: PT3-S1
-    types:
-        - BS
-        - CS
-    command: D:\TV\BonRecTest\BonRecTest.exe --decoder D:\TV\BonRecTest\B25Decoder.dll --driver D:\TV\BonRecTest\BonDriver_PT3-S0.dll --output - --channel <channel>
-    decoder: ~
-    isDisabled: false
+      types:
+          - BS
+          - CS
+      command: D:\TV\BonRecTest\BonRecTest.exe --decoder D:\TV\BonRecTest\B25Decoder.dll --driver D:\TV\BonRecTest\BonDriver_PT3-S0.dll --output - --channel <channel>
+      decoder: ~
+      isDisabled: false
 
     - name: PT3-S2
-    types:
-        - BS
-        - CS
-    command: D:\TV\BonRecTest\BonRecTest.exe --decoder D:\TV\BonRecTest\B25Decoder.dll --driver D:\TV\BonRecTest\BonDriver_PT3-S1.dll --output - --channel <channel>
-    decoder: ~
-    isDisabled: false
+      types:
+          - BS
+          - CS
+      command: D:\TV\BonRecTest\BonRecTest.exe --decoder D:\TV\BonRecTest\B25Decoder.dll --driver D:\TV\BonRecTest\BonDriver_PT3-S1.dll --output - --channel <channel>
+      decoder: ~
+      isDisabled: false
 
     - name: PT3-T1
-    types:
-        - GR
-    command: D:\TV\BonRecTest\BonRecTest.exe --decoder D:\TV\BonRecTest\B25Decoder.dll --driver D:\TV\BonRecTest\BonDriver_PT3-T0.dll --output - --channel <channel>
-    decoder: ~
-    isDisabled: false
+      types:
+          - GR
+      command: D:\TV\BonRecTest\BonRecTest.exe --decoder D:\TV\BonRecTest\B25Decoder.dll --driver D:\TV\BonRecTest\BonDriver_PT3-T0.dll --output - --channel <channel>
+      decoder: ~
+      isDisabled: false
 
     - name: PT3-T2
-    types:
-        - GR
-    command: D:\TV\BonRecTest\BonRecTest.exe --decoder D:\TV\BonRecTest\B25Decoder.dll --driver D:\TV\BonRecTest\BonDriver_PT3-T1.dll --output - --channel <channel>
-    decoder: ~
-    isDisabled: false
+      types:
+          - GR
+      command: D:\TV\BonRecTest\BonRecTest.exe --decoder D:\TV\BonRecTest\B25Decoder.dll --driver D:\TV\BonRecTest\BonDriver_PT3-T1.dll --output - --channel <channel>
+      decoder: ~
+      isDisabled: false
     ```
 6. `Start-Service mirakurun`
 
